@@ -1,13 +1,8 @@
+import { aboutme, bootstrapImg, cssFile, cssImg, htmlImg, nextImg, physicsImg, tailwindImg } from "@/assets/images";
 import Image from "next/image";
 import Link from "next/link";
-import aboutme from "@/assets/images/about-me.jpg";
-import htmlImg from "@/assets/images/services-img/html.png";
-import cssImg from "@/assets/images/services-img/css-3.png";
-import bootstrapImg from "@/assets/images/services-img/bootstrap.png";
-import physicsImg from "@/assets/images/services-img/physics.png";
-import cssFile from "@/assets/images/services-img/css-file.png";
-import tailwindImg from "@/assets/images/services-img/tailwind.png";
-import nextImg from "@/assets/images/services-img/nextjs-icon.svg";
+
+
 const About = () => {
   return (
     <section

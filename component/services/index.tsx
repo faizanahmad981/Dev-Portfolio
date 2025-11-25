@@ -1,9 +1,6 @@
 import Image from 'next/image';
+import { mouseImg, seoImg, uiUxImg, websiteImg } from '@/assets/images';
 
-import mouseImg from "@/assets/images/services-img/mouse.webp"
-import uiUxImg from "@/assets/images/services-img/ui-ux.webp"
-import websiteImg from "@/assets/images/services-img/website.webp"
-import seoImg from "@/assets/images/services-img/seo.webp"
 export default function Services() {
   return (
     <section id="services" className="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-12">

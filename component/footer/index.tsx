@@ -1,9 +1,10 @@
 'use client';
 
+import { secondLogo } from '@/assets/images';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
-import secondLogo from "@/assets/images/second-logo.png"
+
 export default function Footer() {
   return (
     <footer id="contact" className="mt-5 py-10 bg-gray-100">

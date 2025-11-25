@@ -3,8 +3,10 @@
 
 import Image from "next/image";
 
-import homeRight from "@/assets/images/home-right.webp"
+
+ 
 import TypewriterComp from "./TypeWriter";
+import { homeRight } from "@/assets/images";
 const Banner = () => {
   return (
     <section id="home" className="bg-gray-100 py-16 w-full  ">

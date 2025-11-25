@@ -1,9 +1,8 @@
 'use client';
 
+import { blog2Img, blogImg, entertainmentImg } from '@/assets/images';
 import Image from 'next/image';
-import blogImg from "@/assets/images/blog/blog.webp"
-import blog2Img from "@/assets/images/blog/blog2.webp"
-import entertainmentImg from "@/assets/images/blog/Entertainment.jpg"
+
 const blogs = [
   {
     title: 'Social Life',

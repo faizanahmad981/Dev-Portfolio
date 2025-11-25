@@ -7,7 +7,7 @@ import Footer from "@/component/footer";
 import Header from "@/component/header";
 import Portfolio from "@/component/projects";
 import Services from "@/component/services";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

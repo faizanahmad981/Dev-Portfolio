@@ -1,24 +1,23 @@
 'use client';
 import { useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import Modal from './Modal';
 import { FiPlus } from 'react-icons/fi'; // Importing plus icon from react-icons
 
-import carouselImg from "@/assets/images/portfolio/truthkeep/carousal-1.png"
-import truthkeep1 from "@/assets/images/portfolio/truthkeep/1.jpg"
-import truthkeep2 from "@/assets/images/portfolio/truthkeep/2.jpg"
-import truthkeep3 from "@/assets/images/portfolio/truthkeep/3.jpg"
-import jointOfficeMain from "@/assets/images/portfolio/Joint-Office-Detector/main 1.png"
-import carouselJointOffice from "@/assets/images/portfolio/Joint-Office-Detector/carusal-1.jpg"
-import carouselJointOffice1 from "@/assets/images/portfolio/Joint-Office-Detector/carusal.jpg"
-import sellermargin from "@/assets/images/portfolio/seller-margin/crm.png"
-import sellermargin1 from "@/assets/images/portfolio/seller-margin/crm1.png"
-import sellermargin2 from "@/assets/images/portfolio/seller-margin/crm2.png"
-import sellermargin3 from "@/assets/images/portfolio/seller-margin/crm3.png"
-import sellermargin4 from "@/assets/images/portfolio/seller-margin/crm4.png"
-import sellermargin5 from "@/assets/images/portfolio/seller-margin/crm5.png"
-import sellermarginMockup from "@/assets/images/portfolio/seller-margin/mockup-sellerMargin.png"
-const projects = [
+import {carouselImg,truthkeep1,truthkeep2,truthkeep3,jointOfficeMain,carouselJointOffice,carouselJointOffice1,sellermargin,
+    sellermargin1,sellermargin2,sellermargin3,sellermargin4,sellermargin5,sellermarginMockup,} from '@/assets/images';
+    
+type Project = {
+  id: string;
+  title: string;
+  img: StaticImageData;
+  description: string;
+  technologies: string;
+  images: StaticImageData[];
+  link?: string;
+  dashboard?: string;
+};
+const projects:Project[]  = [
   {
     id: 'project1',
     title: 'Joint Office Detector',
@@ -95,7 +94,7 @@ const projects = [
 ];
 
 export default function Portfolio() {
-  const [selectedProject, setSelectedProject] = useState(null);
+ const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <section id="portfolio" className="py-12 bg-gray-100">

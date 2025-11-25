@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -10,7 +10,8 @@ interface ModalProps {
     title: string;
     description: string;
     technologies: string;
-    images: string[];
+   images: StaticImageData[];
+
     link?: string;
     dashboard?:string;
   };
