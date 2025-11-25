@@ -11,7 +11,7 @@ const Banner = () => {
       <div className="container mx-auto flex flex-col lg:flex-row items-center px-12">
         {/* Left Section */}
         <div className="lg:w-1/2 text-center lg:text-left">
-          <TypewriterComp />
+          <TypewriterComp  />
           <h1 className="text-6xl font-bold uppercase text-black mt-2">
             Faizan Ahmed
           </h1>
